@@ -194,8 +194,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <button id="ar-failure">
     AR is not tracking!
   </button>
-                         
-    <div class="slider">
+   
+  <div id="controls" class="dim">
+    <label for="src">Product:</label>
+    <select id="src">
+      <option value="Models/regis_standing_sit_standing_lookup_final_10___1666756088204.glb?sound=Sound/Dog_Bark_Panting_13.242 sec.wav">Regis Sit</option>
+      <option value="Models/regis_standing_lay_standing_lookup_final_1b___1666745898045.glb?sound=Sound/Dog_Bark_Panting_13.242 sec.wav">Regis Down</option>
+      <option value="Models/regis_standing_lookingup_final_4b___1666752207448.glb?sound=Sound/Dog_Bark_Panting_13.242 sec.wav">Regis Stay</option>
+      <option value="Models/new_dancing_dog_long_hip_hop_2___1666746162500.glb?sound=Sound/Dog_Bark_Panting_13.242 sec.wav">Regis Dance</option>
+      <option value="Models/regis_catching_scalebone_final_1___1666908892991.glb?sound=Sound/Regis Bone Catch.wav">Regis Catch</option>
+    </select><br>
+
+    <label for="show-dimensions">Show Dimensions:</label>
+    <input id="show-dimensions" type="checkbox" checked="true">
+  </div>
+                                                              
+    <!--<div class="slider">
     <div class="slides">
       <button class="slide selected" onclick="switchSrc(this, 'regis_standing_sit_standing_lookup_final_10___1666756088204')" style="background-image:url('images/Button Sit.png');">
 
@@ -359,7 +373,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     outline: 1px solid #4285f4;
   }
 
-</style>
+</style> -->
                
   <div class="card1"> 
   <model-viewer id="model-viewer" loading="eager" src="Models/regis_speaking_final_headear_2___1667346499397.glb?sound=Sound/REGIS_4_final.wav" shadow-intensity="1" autoplay animation-name="" 
