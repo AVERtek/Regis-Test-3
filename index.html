@@ -236,7 +236,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </model-viewer>
    </div>
  
- 
+ <script type="module">
+  const modelViewer = document.querySelector('#dimension-demo');
+
+  modelViewer.querySelector('#src').addEventListener('input', (event) => {
+    modelViewer.src = event.target.value;
+  });
+
+  const checkbox = modelViewer.querySelector('#show-dimensions');
+
+  function setVisibility(element) {
+    if (checkbox.checked) {
+      element.classList.remove('hide');
+    } else {
+      element.classList.add('hide');
+    }
+  }
+
+  checkbox.addEventListener('change', () => {
+    setVisibility(modelViewer.querySelector('#dimLines'));
+    modelViewer.querySelectorAll('button').forEach((hotspot) => {
+      setVisibility(hotspot);
+    });
+  });
+
     <section class="attribution">
         <div>
           <span>
